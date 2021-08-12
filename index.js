@@ -18,7 +18,7 @@ The function should:
 function createMenuItem(name, price, category) {
   return { name, price, category }
 }
-console.log('task 1a', createMenuItem('Burger', 5, 'Lunch'))
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
 Test your createMenuItems function by doing the following:
@@ -28,8 +28,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-
-
+console.log('task 1b', createMenuItem('Burger', 5, 'Lunch'));
+console.log(createMenuItem('Taco', 3, 'Lunch'));
+console.log(createMenuItem('Falafel', 6, 'Lunch'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
