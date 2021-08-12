@@ -77,7 +77,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log('task 3', reviews[5].feedback);
 
 
 
@@ -101,9 +101,11 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */) {
-  /*Your Code Here */
+function addReview(array, name, rating, feedback) {
+  array.push({ name, rating, feedback });
+  return array;
 }
+console.log('task 5', addReview(reviews, 'Daniela', 5, 'Beautiful atmostphere and wonderful vegan options!'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -116,10 +118,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, index) {
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`
 }
-
+console.log('task 6', getReviewByIndex(reviews, 2));
 
 
 
