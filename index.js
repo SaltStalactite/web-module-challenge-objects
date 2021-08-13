@@ -211,9 +211,9 @@ Use the carMaker function below to do the following:
   It would return 110 because it was created with 10 as the odometer and we added 100 to it with the drive method 
 */
 
-let car;
+// let car;
 function carMaker(odometer) {
-  car = {
+  let car = {
     odometer: odometer,
     drive: function (distance) {
       return odometer + distance;
@@ -221,8 +221,11 @@ function carMaker(odometer) {
   }
   return car;
 }
-console.log('stretch 3', carMaker(10));
+const car = carMaker(10);
+console.log(car);
 console.log(car.drive(100));
+//console.log('stretch 3', carMaker(10));
+// console.log(car.drive(100));
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
 function foo() {
   console.log('its working');
