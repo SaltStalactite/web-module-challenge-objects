@@ -211,13 +211,18 @@ Use the carMaker function below to do the following:
   It would return 110 because it was created with 10 as the odometer and we added 100 to it with the drive method 
 */
 
-
-function carMaker(/* code here */) {
-  /* code here */
-
+let car;
+function carMaker(odometer) {
+  car = {
+    odometer: odometer,
+    drive: function (distance) {
+      return odometer + distance;
+    }
+  }
+  return car;
 }
-
-
+console.log('stretch 3', carMaker(10));
+console.log(car.drive(100));
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
 function foo() {
   console.log('its working');
